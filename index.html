@@ -1,0 +1,48 @@
+
+<html>
+    <title>SUPRISE FORM</title>
+    <body bgcolor="aliceblue">
+            <!--javascript code-->
+            <script>
+                function guesstheNumber()
+                {
+                    alert('Hello There!')
+                    alert('YOU HAVE SUBMITTED THE FORM')
+                    alert('ITS TIME TO PLAY A GAME')
+                    alert('GUESS THE NUMBER GAME ')
+                    // generating a random no.
+                    const random=Math.floor(Math.random()*10)+1;
+                    //input from user
+                    let number=parseInt(prompt('ENTER YOUR LUCKY NUMBER BETWEEN O TO 10'));
+                    //checking the condition
+                    while(random !== number){
+                         number=parseInt(prompt('ENTER NUMBER AGAIN TO WIN'));
+                        }
+                        if(random == number){
+                            alert('CONGRATULATION YOU GUESSED RIGHT!');
+                        }
+                    }
+                </script>    
+            <marquee style="color: initial;"><b><i>NAME:-KAPIL KATARIA<br>REGISTRATION NO.:-20BCY10034</i></b></marquee>        
+            <center><form>
+                <!--field set to form border-->
+                    <fieldset>
+                <legend style="color: darkblue";"><b>FUN FORM</b></legend>
+                <h2><label type="text">FULL NAME:-</label></h2>
+                <h2><input type="text"></h2>
+                <h2><label type="text">AGE:-</label></h2>
+                <h2><input type="text"></h2>
+                <h2><label type="text">COLLEGE NAME:-</label></h2>
+                <h2><input type="text"></h2>
+                <h2><label type="email">EMAIL ID:-</label></h2>
+                <h2><input type="email"></h2>
+                <h2><label type="password">PASSWORD:-</label></h2>
+                <h2><input type="password"></h2>
+                <button style="color: crimson;"type="reset">RESET</button>
+                <button style="color: darkgreen;"type="submit" onclick="guesstheNumber()">SUBMIT</button>    
+                <p><img src="upgif.gif"></p>
+                </center>
+                </form>
+            </fieldset>
+            </body>
+</html>
